@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/style.css">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="overlay d-none"></div>
+    <div class="header__logo_cont">
+      <img class="header__logo" src="images/logo.svg" alt="Snap Logo">
+    </div>
+
+    <div class="header__links hide-for-mobile">
+      <div class="links-left">
+        <div id="features" class="features_menu">
+          <a href="#">Features <img class="f-arrow fade-in" src="images/icon-arrow-down.svg" alt=""> <img
+              class="f-arrow hide-menu fade-out" src="images/icon-arrow-up.svg" alt=""> </a>
+          <div class="features_content hide-menu">
+            <a href="#todolist"><img src="images/icon-todo.svg" alt="todolist"> Todo List</a>
+            <a href="#calendars"><img src="images/icon-calendar.svg" alt=""> Calendars</a>
+            <a href="#reimnder"><img src="images/icon-reminders.svg" alt=""> Reminders</a>
+            <a href="#planning"><img src="images/icon-planning.svg" alt=""> Planning</a>
+          </div>
+        </div>
+        <div id="company" class="company_menu">
+          <a href="#">Company <img class="f-arrow fade-in" src="images/icon-arrow-down.svg" alt=""> <img
+              class="f-arrow hide-menu fade-out" src="images/icon-arrow-up.svg" alt=""> </a>
+          <div class="company_content hide-menu">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a href="#">Careers</a>
+        <a href="#">About</a>
+      </div>
+      <div class="links-right">
+        <a href="#">Login</a>
+        <a href="#" class="btn">Register</a>
+      </div>
+    </div>
+    <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+
+    <div class="header__side_nav side-hidden">
+      <div class="side_feature">
+        <a href="#">Features <img class="f-arrow fade-in" src="images/icon-arrow-down.svg" alt="arrow_down">
+          <img class="f-arrow d-none fade-out" src="images/icon-arrow-up.svg" alt="arrow_up"> </a>
+        <div class="side_nav_features_cont d-none">
+          <a href="#todolist"><img src="images/icon-todo.svg" alt="todolist"> Todo List</a>
+          <a href="#calendars"><img src="images/icon-calendar.svg" alt="calendar"> Calendars</a>
+          <a href="#reimnder"><img src="images/icon-reminders.svg" alt="reminder"> Reminders</a>
+          <a href="#planning"><img src="images/icon-planning.svg" alt="planning"> Planning</a>
+        </div>
+      </div>
+      <div class="side_company">
+        <a href="#">Company <img class="f-arrow fade-in" src="images/icon-arrow-down.svg" alt="arrow_down">
+          <img class="f-arrow d-none" src="images/icon-arrow-up.svg" alt="arrow_up"></a>
+        <div class="side_nav_company_cont d-none">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </div>
+      <a href="#">Careers</a>
+      <a href="#">About</a>
+    </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__container">
+      <div class="hero__text">
+        <div class="hero__text_container">
+          <h1> Make <span>remote work</span></h1>
+          <p>Get your team in sync, no matter your location.
+            Streamline processes, create team rituals, and watch productivity soar.
+          </p>
+        </div>
+        <a href="#" class="learn-more">Learn More</a>
+        <ul class="bottom-img">
+          <li><img src="images/client-databiz.svg" alt="databiz"></li>
+          <li><img src="images/client-audiophile.svg" alt="databiz"></li>
+          <li><img src="images/client-meet.svg" alt="databiz"></li>
+          <li><img src="images/client-maker.svg" alt="databiz"></li>
+        </ul>
+      </div>
+
+      <div class="hero__image">
+        <div class="hero__image_container">
+          <img class="hide-for-mobile" src="images/image-hero-desktop.png" alt="">
+          <img class="hide-for-desktop" src="images/image-hero-mobile.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Features
+  Company
+  Careers
+  About
+
+  Login
+  Register
+
+  Make remote work
+
+  Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.
+
+  Learn more -->
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Rcasas14</a>.
+  </div> -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
